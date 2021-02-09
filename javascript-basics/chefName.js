@@ -1,8 +1,8 @@
-let name = 'Tomasz';
+let myName = 'Tomasz';
 
-console.log(name);
+console.log(myName);
 
-name = "Hubert Nakamura";
+myName = "Hubert Nakamura";
 
-console.log(name);
+console.log(myName);
 
