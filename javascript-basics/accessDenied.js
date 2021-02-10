@@ -24,31 +24,27 @@ const mySolution = () => {
         return `Wrong! You can try again ${maxLoginAttempts - loginAttemptsFailed} more time(s)`
     }else if(!passwordCorrect && maxLoginAttempts<=maxLoginAttempts){
         return 'You are trying to hack us! ACCESS DENIED!'
-    }else{
-        'Please log in'
     }
 }
 
 
-// const display = (passwordCorrect
-//     ?'Welcome'
-//     :finalLoginAttempt && !passwordCorrect
-//     ?`Wrong! You can try again ${maxLoginAttempts - loginAttemptsFailed} more time(s)`)
-//     :!passwordCorrect && maxLoginAttempts<=maxLoginAttempts
-//     ?'You are trying to hack us! ACCESS DENIED!'
-//     :
-//     )
-
-// console.log(display)
-
 console.log(mySolution());
+const display = (passwordCorrect
+    ?'Welcome'
+    :finalLoginAttempt && !passwordCorrect
+    ?`Wrong! You can try again ${maxLoginAttempts - loginAttemptsFailed} more time(s)`
+    :!passwordCorrect && maxLoginAttempts<=maxLoginAttempts
+    ?'You are trying to hack us! ACCESS DENIED!'
+    :'no'
+    )
 
+console.log(display)
 
-const message = (passwordCorrect
-  ? 'Welcome'
-  : accountLocked
-  ? 'You are trying to hack us! ACCESS DENIED!'
-  : `Wrong! You can try again ${maxLoginAttempts - (loginAttemptsFailed + 1)} more time(s)`
-)
+// const message = (passwordCorrect
+//   ? 'Welcome'
+//   : accountLocked
+//   ? 'You are trying to hack us! ACCESS DENIED!'
+//   : `Wrong! You can try again ${maxLoginAttempts - (loginAttemptsFailed + 1)} more time(s)`
+// )
 
-console.log(message)
+// console.log(message)
