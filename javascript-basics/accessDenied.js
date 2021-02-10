@@ -18,15 +18,15 @@
 
 
 
-const feedback = (
-     passwordCorrect
+const feedback = (passwordCorrect
      ?'Welcome'
-     : !passwordCorrect && finalLoginAttempt
-     ?`Wrong! You can try again ${maxLoginAttempts - loginAttemptsFailed} more time(s)`
-     :!passwordCorrect && !finalLoginAttempt
-     ?'You are trying to hack us! ACCESS DENIED!'
+     : accountLocked
+     ? 'You are trying to hack us! ACCESS DENIED!'
+     :`Wrong! You can try again ${maxLoginAttempts - loginAttemptsFailed} more time(s)`
+     
+     
  )
 
  console.log(feedback);
 
-console.log('just to test it');
+console.log('TESTING THE CODE   ....');
