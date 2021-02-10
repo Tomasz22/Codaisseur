@@ -22,7 +22,7 @@ const feedback = (passwordCorrect
      ?'Welcome'
      : accountLocked
      ? 'You are trying to hack us! ACCESS DENIED!'
-     :`Wrong! You can try again ${maxLoginAttempts - loginAttemptsFailed} more time(s)`
+     :`Wrong! You can try again ${maxLoginAttempts - (loginAttemptsFailed+1)} more time(s)`
      
      
  )
