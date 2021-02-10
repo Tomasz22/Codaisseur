@@ -1,7 +1,7 @@
 
 
 // total weight of 9 portions
-console.log(9 * (300 + 900 + 100 + 85 + 60)) // 13005
+console.log(9 * (300 + 900 + 100 + 85)) // 12465q
 
 //fat per portion
 
