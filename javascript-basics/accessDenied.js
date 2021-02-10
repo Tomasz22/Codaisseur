@@ -40,11 +40,17 @@ const display = (passwordCorrect
 
 console.log(display)
 
-// const message = (passwordCorrect
-//   ? 'Welcome'
-//   : accountLocked
-//   ? 'You are trying to hack us! ACCESS DENIED!'
-//   : `Wrong! You can try again ${maxLoginAttempts - (loginAttemptsFailed + 1)} more time(s)`
-// )
 
-// console.log(message)
+//this is the solution given by reader
+
+/*..note: there is loginAttemptsFailed +1
+"When the code runs, loginAttemptsFailed is the attempts that have failed in the past, the + 1 is because the current attempt has just failed,"
+*/
+const message = (passwordCorrect
+  ? 'Welcome'
+  : accountLocked
+  ? 'You are trying to hack us! ACCESS DENIED!'
+  : `Wrong! You can try again ${maxLoginAttempts - (loginAttemptsFailed + 1)} more time(s)`
+)
+
+console.log(message)
