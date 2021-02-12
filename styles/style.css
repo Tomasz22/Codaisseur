@@ -1,63 +1,75 @@
 
-#external {
-    border-top:gray solid 1px;
-    border-right: gray solid 1px;
-    border-left: gray solid 1px;
-    margin: 4% 30%;
-    
-}
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 18px;
+  }
+  
+  .container {
+    margin: 20px auto;
+    width: 500px;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
 
-header {
-     border-bottom: 1px solid gray;
-     display:flex;
-     flex-direction: column;
-     margin-bottom: 18px;
-     
-}
-
-#inHeadTop {
-    border-bottom: gray solid 1px;
+  }
+  
+  h1 {
     text-align: center;
-}
-#inHeadBottom {
-    /* border: red solid 1px;  */
-    padding-left: 8px;
-}
-
-main {
-    border-top: 1px solid gray;
-    margin-top: 22px;
-    display:flex;
+  }
+  
+  form {
+    padding: 0 0 20px; /*same as 0 0 20px 0*/ 
+  }
+  
+  input#new-todo {
+    display: block;
+    width: 478px;
+    border-radius: 3px;
+    border: 1px solid #e6e6e6;
+    padding: 10px; 
+    font-size: 18px;
     
-    flex-direction: column;
+  }
+  
+  ul#todolist {
+    list-style: none; /*thx to this no dot in the li*/
+    margin: 0;
+    padding: 0;
     
-}
-
-#inMainTop {
+  }
+  
+  ul#todolist li {
+    padding: 5px;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
     
+  }
+  
+  ul#todolist li:hover {
+    background-color: #e6e6e6;
+  }
+  
+  ul#todolist .todo.completed label {
+    text-decoration: line-through;
+    color: #999;
+  }
+  
+  .footer {
+    margin-top: 10px;
+    background: #323232;
+    color: #e6e6e6;
+    padding: 5px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+  
+  .footer a:link,
+  .footer a:hover,
+  .footer a:visited {
+    color: #e6e6e6;
+    text-decoration: none;
     
-    border-bottom: gray solid 1px;
-    
-}
-
-#inMainBottom {
-    border-bottom: gray solid 1px;
- 
-}
-
-footer {
-    
-    height: 22px;
-    border-bottom: solid 1px gray;
-    color: white;
-    background: black;      
-    
-}
-
-
-
-li {
-
-    display: inline;
-    inline-size: auto;
-}
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
